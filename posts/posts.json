@@ -1,18 +1,18 @@
 [
   {
-    "id": "getting-started",
-    "title": "Getting Started with GitHub Pages",
-    "date": "2024-03-15",
-    "excerpt": "Learn how to create and host your own blog using GitHub Pages...",
-    "image": "https://picsum.photos/seed/1/800/400",
-    "tags": ["github", "web development"]
+    "id": "wtf-am-i-doing",
+    "title": "I Have No Idea What I'm Doing",
+    "date": "2025-02-21",
+    "excerpt": "Because all of these kind of sites need a welcome post for some reason",
+    "image": "https://images.unsplash.com/photo-1484557985045-edf25e08da73?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    "tags": ["meta", "welcome"]
   },
   {
-    "id": "web-dev-best-practices",
-    "title": "Web Development Best Practices",
-    "date": "2024-03-10",
-    "excerpt": "Essential tips and tricks for modern web development...",
-    "image": "https://picsum.photos/seed/2/800/400",
-    "tags": ["web development", "best practices"]
+    "id": "gameboy-emulator-clojure",
+    "title": "Writing a Gameboy Emulator in Clojure",
+    "date": "2025-02-22",
+    "excerpt": "A deep dive into emulator development using Clojure, exploring hardware emulation and functional programming...",
+    "image": "https://images.unsplash.com/photo-1531525645387-7f14be1bdbbd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400",
+    "tags": ["clojure", "emulator", "gameboy"]
   }
 ]

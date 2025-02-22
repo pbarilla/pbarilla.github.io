@@ -1,8 +1,18 @@
+/* Base styles */
 :root {
-    --primary-color: #2563eb;
-    --text-color: #1f2937;
-    --bg-color: #ffffff;
-    --accent-bg: #f3f4f6;
+    --primary-color: #569CD6;    /* VSCode blue */
+    --text-color: #D4D4D4;       /* VSCode default text */
+    --bg-color: #1E1E1E;         /* VSCode main background */
+    --accent-bg: #252526;        /* VSCode darker background */
+    --bg-primary: #1E1E1E;       /* Main background */
+    --bg-secondary: #252526;     /* Secondary background */
+    --text-primary: #D4D4D4;     /* Primary text */
+    --text-secondary: #808080;   /* Secondary text */
+    --accent-color: #569CD6;     /* Accent color */
+    --nav-bg: #333333;           /* Navigation background */
+    --border-color: #454545;     /* Border color */
+    --link-hover: #6FB3E0;       /* Link hover color */
+    --code-bg: #1E1E1E;          /* Code background */
 }
 
 * {
@@ -12,9 +22,9 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Source Code Pro', 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
     line-height: 1.6;
-    color: var(--text-color);
+    color: var(--text-primary);
     background-color: var(--bg-color);
 }
 
@@ -43,18 +53,18 @@ nav {
 }
 
 .nav-links a {
-    color: var(--text-color);
+    color: var(--text-secondary);
     text-decoration: none;
     margin-left: 2rem;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--primary-color);
+    color: var(--link-hover);
 }
 
 .nav-links a.active {
-    color: var(--primary-color);
+    color: var(--link-hover);
 }
 
 main {
@@ -66,15 +76,23 @@ main {
 
 .hero {
     text-align: center;
-    padding: 4rem 0;
+    padding: 4rem 2rem;
     background-color: var(--accent-bg);
+    border: 1px solid var(--border-color);
     border-radius: 1rem;
     margin-bottom: 2rem;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--text-primary);
+}
+
+.hero p {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin: 1rem 0 0;
 }
 
 .blog-posts {
@@ -84,9 +102,10 @@ main {
 }
 
 .blog-post {
-    background: var(--bg-color);
+    background: var(--accent-bg);
+    border: 1px solid var(--border-color);
     border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -107,15 +126,16 @@ main {
 
 .blog-post h2 {
     margin-bottom: 1rem;
+    color: var(--text-primary);
 }
 
 .blog-post p {
-    color: #666;
+    color: var(--text-secondary);
     margin-bottom: 1rem;
 }
 
 .blog-post .date {
-    color: #888;
+    color: var(--text-secondary);
     font-size: 0.9rem;
 }
 
@@ -134,4 +154,115 @@ footer {
     .hero h1 {
         font-size: 2rem;
     }
+}
+
+.dark-theme {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+/* Navigation */
+nav {
+    background-color: var(--nav-bg);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--link-hover);
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--accent-bg);
+    border: 1px solid var(--border-color);
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--text-primary);
+}
+
+.hero p {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin: 1rem 0 0;
+}
+
+/* Blog posts section */
+.blog-posts {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--accent-bg);
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border-color);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-links {
+        margin-top: 1rem;
+    }
+    
+    .nav-links a {
+        margin: 0 1rem;
+    }
+}
+
+/* Ensure visited links maintain the same color */
+a:visited {
+    color: inherit;
+}
+
+.nav-links a:visited {
+    color: var(--text-secondary);
+}
+
+.nav-links a:hover,
+.nav-links a:visited:hover,
+.nav-links a.active {
+    color: var(--link-hover);
+}
+
+.content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.content p {
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
 } 
