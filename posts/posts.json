@@ -1,0 +1,18 @@
+[
+  {
+    "id": "getting-started",
+    "title": "Getting Started with GitHub Pages",
+    "date": "2024-03-15",
+    "excerpt": "Learn how to create and host your own blog using GitHub Pages...",
+    "image": "https://picsum.photos/seed/1/800/400",
+    "tags": ["github", "web development"]
+  },
+  {
+    "id": "web-dev-best-practices",
+    "title": "Web Development Best Practices",
+    "date": "2024-03-10",
+    "excerpt": "Essential tips and tricks for modern web development...",
+    "image": "https://picsum.photos/seed/2/800/400",
+    "tags": ["web development", "best practices"]
+  }
+]
