@@ -9,7 +9,7 @@
   },
   {
     "id": "gameboy-emulator-clojure",
-    "title": "Writing a Gameboy Emulator in Clojure",
+    "title": "Writing a Gameboy Emulator in Clojure - Part 1 - Registers",
     "date": "2025-02-22",
     "excerpt": "A deep dive into emulator development using Clojure, exploring hardware emulation and functional programming...",
     "image": "https://images.unsplash.com/photo-1531525645387-7f14be1bdbbd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400",
