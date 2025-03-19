@@ -14,5 +14,13 @@
     "excerpt": "A deep dive into emulator development using Clojure, exploring hardware emulation and functional programming...",
     "image": "https://images.unsplash.com/photo-1531525645387-7f14be1bdbbd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400",
     "tags": ["clojure", "emulator", "gameboy"]
+  },
+  {
+    "id": "gameboy-emulator-clojure-cartridge",
+    "title": "Writing a Gameboy Emulator in Clojure - Part 2 - Memory",
+    "date": "2025-03-19",
+    "excerpt": "Continuing our Gameboy emulator series, we dive into cartridge types, ROM/RAM banking, and implementing MBC controllers in Clojure... It also took me a while to write this one.",
+    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    "tags": ["clojure", "emulator", "gameboy"]
   }
 ]
