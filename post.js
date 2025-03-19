@@ -1,4 +1,57 @@
+// Add function to check if both marked and Prism are loaded
+function waitForDependencies() {
+  return new Promise((resolve) => {
+    const check = () => {
+      if (window.marked && window.Prism) {
+        resolve();
+      } else {
+        setTimeout(check, 100);
+      }
+    };
+    check();
+  });
+}
+
+// Add highlight function for marked
+const highlight = (code, lang) => {
+  if (lang && Prism.languages[lang]) {
+    try {
+      return Prism.highlight(code, Prism.languages[lang], lang);
+    } catch (err) {
+      console.error(err);
+    }
+  }
+  return code;
+};
+
+// Move marked configuration outside the function
+marked.use({
+  gfm: true, // Enable GitHub Flavored Markdown
+  breaks: true,
+  tables: true, // Explicitly enable tables
+  headerIds: true,
+  mangle: false,
+  pedantic: false,
+  highlight: highlight,
+  langPrefix: "language-", // This is important for Prism.js
+});
+
 async function loadPost() {
+  // Wait for both marked and Prism to be available
+  await waitForDependencies();
+
+  // Configure marked
+  marked.use({
+    gfm: true,
+    breaks: true,
+    tables: true,
+    headerIds: true,
+    mangle: false,
+    pedantic: false,
+    highlight: highlight,
+    langPrefix: "language-",
+  });
+
   const urlParams = new URLSearchParams(window.location.search);
   const postId = urlParams.get("id");
 
@@ -45,6 +98,9 @@ async function loadPost() {
                 ${marked.parse(markdownContent)}
             </div>
         `;
+
+    // Highlight all code blocks after content is inserted
+    Prism.highlightAllUnder(postContainer);
 
     document.title = `${post.title} - My Blog`;
   } catch (error) {
