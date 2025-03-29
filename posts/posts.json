@@ -41,5 +41,13 @@
       "rom banking",
       "ram banking"
     ]
+  },
+  {
+    "id": "gameboy-emulator-clojure-display",
+    "title": "Writing a Gameboy Emulator in Clojure - Part 4 - Display",
+    "date": "2025-04-05",
+    "excerpt": "We finally get to the Display! ",
+    "image": "https://images.unsplash.com/photo-1708958624305-8d4c083bdba6?q=80&w=1335&auto=format&fit=crop&w=800&h=400",
+    "tags": ["clojure", "emulator", "gameboy", "display"]
   }
 ]
