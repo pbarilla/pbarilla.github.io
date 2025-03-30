@@ -73,5 +73,13 @@
       "timer",
       "interrupt"
     ]
+  },
+  {
+    "id": "gameboy-emulator-clojure-instructions-1",
+    "title": "Writing a Gameboy Emulator in Clojure - Instructions - Part 1",
+    "date": "2025-03-31",
+    "excerpt": "Let's start with some simple instructions!",
+    "image": "https://images.unsplash.com/photo-1648245966023-290760953bbf?q=80&w=2787&auto=format&fit=crop&w=800&h=400",
+    "tags": ["clojure", "emulator", "gameboy", "instructions"]
   }
 ]
