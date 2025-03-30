@@ -6,7 +6,7 @@ Clojure, as far as I know, doesnt have any way to display anything. Like, it's k
 So to get something on the display, we'll need to use _all_ the tools we have available to us.
 
 Clojure, since it's built on the JVM, has access to all the tools the JVM has to offer.
-This means Java libraries, and even your own Java code, so long as it's a .class file, and it's on the classpath.
+This means Java libraries, and even your own Java code, will work with Clojure!
 
 Java has a bunch of libraries for creating GUIs, the one I'm most familiar with is Swing.
 

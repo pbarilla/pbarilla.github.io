@@ -9,7 +9,7 @@
   },
   {
     "id": "gameboy-emulator-clojure",
-    "title": "Writing a Gameboy Emulator in Clojure - Part 1 - Registers",
+    "title": "Writing a Gameboy Emulator in Clojure - CPU Registers",
     "date": "2025-02-22",
     "excerpt": "A deep dive into emulator development using Clojure, exploring hardware emulation and functional programming...",
     "image": "https://images.unsplash.com/photo-1531525645387-7f14be1bdbbd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&h=400",
@@ -17,7 +17,7 @@
   },
   {
     "id": "gameboy-emulator-clojure-cartridge",
-    "title": "Writing a Gameboy Emulator in Clojure - Part 2 - Memory",
+    "title": "Writing a Gameboy Emulator in Clojure - Memory",
     "date": "2025-03-19",
     "excerpt": "Continuing our Gameboy emulator series, we dive into cartridge types, ROM/RAM banking, and implementing MBC controllers in Clojure... It also took me a while to write this one.",
     "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
@@ -25,9 +25,9 @@
   },
   {
     "id": "gameboy-emulator-clojure-memory",
-    "title": "Writing a Gameboy Emulator in Clojure - Part 3 - Memory Continued",
-    "date": "2025-03-29",
-    "excerpt": "We finish up ROM Banking! ",
+    "title": "Writing a Gameboy Emulator in Clojure - Memory Continued",
+    "date": "2025-03-27",
+    "excerpt": "We finish up ROM Banking!",
     "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
     "tags": [
       "clojure",
@@ -44,10 +44,18 @@
   },
   {
     "id": "gameboy-emulator-clojure-display",
-    "title": "Writing a Gameboy Emulator in Clojure - Part 4 - Display",
-    "date": "2025-04-05",
-    "excerpt": "We finally get to the Display! ",
+    "title": "Writing a Gameboy Emulator in Clojure - Display",
+    "date": "2025-03-28",
+    "excerpt": "We finally get to the Display!",
     "image": "https://images.unsplash.com/photo-1708958624305-8d4c083bdba6?q=80&w=1335&auto=format&fit=crop&w=800&h=400",
     "tags": ["clojure", "emulator", "gameboy", "display"]
+  },
+  {
+    "id": "gameboy-emulator-clojure-io-registers-p1",
+    "title": "Writing a Gameboy Emulator in Clojure - I/O Registers - Part 1",
+    "date": "2025-03-29",
+    "excerpt": "Let's hook up some controls!",
+    "image": "https://images.unsplash.com/photo-1596998791568-386ef5297c2e?q=80&w=1480&auto=format&fit=crop&w=800&h=400",
+    "tags": ["clojure", "emulator", "gameboy", "io", "registers", "joypad"]
   }
 ]

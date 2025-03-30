@@ -2,7 +2,7 @@
 
 ## Where we left off
 
-In the [previous post](./gameboy-emulator-clojure-cartridge.md), we looked at the cartridge types, ROM/RAM banking, and implementing MBC controllers in Clojure.
+In the [previous post](./post.html?id=gameboy-emulator-clojure-cartridge), we looked at the cartridge types, ROM/RAM banking, and implementing MBC controllers in Clojure.
 
 And I kind of got stuck, because at the time I wasnt sure how to proceed.
 
