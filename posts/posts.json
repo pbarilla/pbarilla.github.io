@@ -57,5 +57,21 @@
     "excerpt": "Let's hook up some controls!",
     "image": "https://images.unsplash.com/photo-1596998791568-386ef5297c2e?q=80&w=1480&auto=format&fit=crop&w=800&h=400",
     "tags": ["clojure", "emulator", "gameboy", "io", "registers", "joypad"]
+  },
+  {
+    "id": "gameboy-emulator-clojure-io-registers-p2",
+    "title": "Writing a Gameboy Emulator in Clojure - I/O Registers - Part 2",
+    "date": "2025-03-30",
+    "excerpt": "All the other important I/O Registers! This one wont be as long I promise! Also the pic is a timer, cause one of the registers is the timer. Get it? Cause it's a clock? Yuk yuk yuk.",
+    "image": "https://images.unsplash.com/photo-1431499012454-31a9601150c9?q=80&w=1470&auto=format&fit=crop&w=800&h=400",
+    "tags": [
+      "clojure",
+      "emulator",
+      "gameboy",
+      "io",
+      "registers",
+      "timer",
+      "interrupt"
+    ]
   }
 ]
